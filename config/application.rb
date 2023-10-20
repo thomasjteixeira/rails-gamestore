@@ -23,6 +23,9 @@ module RailsGamestore
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    config.i18n.default_locale = :'pt-BR'
+    config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.{rb,yml}')]
+
     # Configurações adicionadas para tratar o erro - ActionDispatch::Request::Session::DisabledSessionError.
     config.session_store :cookie_store, key: '_interslice_session'
     config.middleware.use ActionDispatch::Cookies
