@@ -20,6 +20,7 @@ group :development, :test do
   gem 'mailcatcher'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
+  gem 'faker'
 end
 
 group :development do
