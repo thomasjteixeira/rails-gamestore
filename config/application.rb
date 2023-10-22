@@ -26,6 +26,8 @@ module RailsGamestore
     config.i18n.default_locale = :'pt-BR'
     config.i18n.load_path += Dir[Rails.root.join('config/locales/**/*.{rb,yml}')]
 
+    config.autoload_paths += %W["#{config.root}/app/validators/"]
+
     # Configurações adicionadas para tratar o erro - ActionDispatch::Request::Session::DisabledSessionError.
     config.session_store :cookie_store, key: '_interslice_session'
     config.middleware.use ActionDispatch::Cookies
