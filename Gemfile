@@ -7,6 +7,7 @@ gem 'rails', '~> 7.0.8'
 
 gem 'bootsnap', require: false
 gem 'devise_token_auth'
+gem 'jbuilder'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'rack-cors'
@@ -17,10 +18,10 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'dotenv-rails'
   gem 'factory_bot_rails'
+  gem 'faker'
   gem 'mailcatcher'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
-  gem 'faker'
 end
 
 group :development do
