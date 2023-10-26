@@ -20,6 +20,7 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'faker'
   gem 'mailcatcher'
+  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'shoulda-matchers'
 end
